@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lego webstore</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/produit.css" />
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="content">
+
+        <h1 id="title">LEGO WebStore</h1>
+
+        <hr>
+
+        <ul>
+            <li><a href="produit.html">Produit</a></li>
+            <li><a href="acheter.html">Acheter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>Acheter des Lego</h2>
+
+        Remplissez le formulaire ci-dessous pour commander des <span class="lego">LEGO</span> !
+
+        <h3>Informations personnelles</h3>
+
+        <form action="acheter.html" method="POST">
+            <p>Civilité:</p>
+
+            <div>
+                <input type="radio" name="sexe">M.
+                <input type="radio" name="sexe">Mme.
+            </div>
+
+            <br><br>
+
+            <input type="text" placeholder="Nom:">
+
+            <br><br>
+
+            <input type="text" placeholder="Prénom:">
+
+            <br><br>
+
+            <input type="email">
+
+            <br><br>
+
+            <h3>Informations de livraison</h3>
+
+            <p>Quantité commandée:</p>
+
+            <select>
+                <option>1 boîte</option>
+                <option>2 boîtes</option>
+                <option>3 boîtes</option>
+                <option>4 boîtes</option>
+                <option>5 boîtes</option>
+            </select>
+
+            <p>Adresse de livraison:</p>
+
+            <textarea></textarea>
+
+        </form>
+
+        <h3>Confirmation</h3>
+
+        <input type="radio">J'ai relu ma commande et certifie que ces informations sont correctes.
+
+        <br><br>
+
+        <input type="submit" value="CONFIRMER LA COMMANDE">
+
+        <hr>
+
+        <a href="#title">Retour en haut de page</a>
+
+        <p>TP1 : Découverte de HTML et CSS<br>L2 Développement Web - 2018</p>
+    </div>
+
+</body>
+
+</html>

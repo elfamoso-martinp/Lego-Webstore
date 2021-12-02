@@ -1,0 +1,45 @@
+/* Feuille de styles */
+
+.al-end {
+    text-align: end;
+}
+
+.min img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-gallery-element:hover {
+    padding: 5px;
+    border-bottom: solid 6px #007bff;
+}
+
+#quantity {
+    text-align: end;
+}
+
+#add-cart {
+    text-align: end;
+}
+
+button a {
+    color: white;
+}
+
+table img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-link img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}

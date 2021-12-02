@@ -1,0 +1,67 @@
+body{
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+
+#content{
+    width: 600px;
+    padding: 32px;
+    background-color: white;
+    margin: auto;
+}
+
+
+a{
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Lignes de séparation*/
+hr{
+    height: 1px;
+    background-color: black;
+}
+
+/*Tous les motqs lego de la page*/
+.lego{
+    color: #007bff;
+}
+
+h3,h2{
+    font-weight: bold;
+}
+
+/*Mise en forme du tableau*/
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*Les paragraphes en bas de page*/
+
+#table-elements{
+    border: none;
+}
+
+#spec{
+    font-size: 12px;
+    float: right;
+}
+
+#img{
+    text-align: center;
+}
+
+#location{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    font-weight: 800;
+}

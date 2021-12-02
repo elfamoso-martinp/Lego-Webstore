@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.price{
+    text-align: right;
+}
+
+#add-cart{
+    text-align: right;
+}

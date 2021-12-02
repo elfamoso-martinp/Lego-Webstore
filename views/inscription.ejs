@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<%- include('partials/head'); %>
+
+    <head>
+        <!-- NavBar top page -->
+        <%- include('partials/nav'); %>
+            <script src="/javascripts/checker.js"></script>
+            <script src="/javascripts/datelist.js"></script>
+            <script src="/javascripts/feedback.js"></script>
+            <script src="/javascripts/sign.js"></script>
+            <link rel="stylesheet" href="/stylesheets/inscription.css">
+
+    </head>
+
+    <body>
+
+        <div class="container p-3 p-md-5">
+
+            <div class="row panier">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Compte</button>
+
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Compte</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" placeholder="Identifiant">
+                            <input type="password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+                <!--Formulaire d'inscription-->
+                <div class="main-container justify-content-md-center">
+                    <h1>Création d'un compte</h1>
+
+                    <div class="progress my-4">
+                        <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
+
+                    <form id="sign">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Nom</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Nom">
+
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputForename">Prénom</label>
+                                <input type="text" class="form-control" id="inputForename" placeholder="Prénom">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputMail">Addresse Mail</label>
+                            <input type="email" class="form-control" id="inputMail" placeholder="Adresse Mail">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="inputYear">Date de naissance (A/M/J)</label>
+                                <select id="yearList" class="form-control">
+
+                            </select>
+                            </div>
+                            <div class="form-group col">
+                                <label for="monthList">Mois</label>
+                                <select id="monthList" class="form-control">
+
+                            </select>
+                            </div>
+                            <div class="form-group col">
+                                <label for="dayList">Jour</label>
+                                <select id="dayList" class="form-control">
+
+                            </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Mot de passe (minimum 6 caractères)</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe" min="6" max="30">
+
+                                <div class="progress-bar bg-success" role="progressbar" id="progressPassword" style="width: 100%; height:2px; display: none" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <label for="inputPassword" class="" style="display: none" id="progressPasswordLabel"><small>Force du mot de passe exellente</small> </label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Confirmez mot de passe</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmez Mot de passe">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">Je confirme mes informations</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Inscription</button>
+                    </form>
+
+                    <!--Pied-de-page -->
+                    <%- include('partials/footer'); %>
+                </div>
+
+    </body>
+
+</html>
